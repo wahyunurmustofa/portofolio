@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family:'Quicksand',sans-serif;
+}
+header{ 
+    height:70px;
+}
+header h1{ 
+    display:inline-block;
+    float: none;
+    padding:15px 24px;
+    text-transform:uppercase;
+}
+header h1 a{ 
+    transition: .3s;
+}
+header h1 a:hover{ 
+    color:#ff5733;
+}
+header ul{ 
+    float:right;
+}
+header ul li{ 
+    padding:24px;
+    display:inline-block;
+}
+header ul li a{ 
+    transition: .3s;
+}
+header ul li a:hover{
+    color:FF5733
+}
+a{ 
+    text-decoration: none;
+} 
+.container{ 
+    width:90%;
+    margin:0 auto;
+}
+.container::after{
+    content:'';
+    display: block;
+    clear: both;
+ }
+ .mobile-menu{ 
+     float:right;
+     display: none;
+     padding:18px;
+ }
+ .mobile-menu:hover{ 
+     cursor: pointer;
+ }
+ #check{ 
+     display:none;
+ }
+ .sidebar{ 
+     position:fixed;
+     top:0;
+     bottom:0;
+     left:-300px;
+     width:300px;
+     background-color:rgba(188,37,220,.9);
+     transition:.3s;
+    }
+    .sidebar ul li { 
+        color:#fff;
+    }
+    .sidebar ul li { 
+        padding:24px;
+        transition:.3s;
+        transition-property:background-color;
+    }
+    .sidebar ul li:hover{ 
+        background-color:#3E044A;
+    }
+    #check:checked ~ .sidebar{ 
+        left:0;
+    }
+    .img{
+        width: 150px;
+        height: 150px;
+        border-radius: 20%;
+        box-shadow: 5px 3px 5px rgb(192, 188, 188);
+        margin-bottom: 10px;
+    }
+    .banner{
+        background-color: blue;
+        padding: 135px 0;
+    }
+    .banner-left{
+        padding: 24px;
+    }
+    h2{
+        color: white;
+    }
+    section{
+        padding: 50px 0;
+    }
+    p{
+        color: white;
+    }
+    .des{
+        margin-top: 10px;
+    }
+    section h3{
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 20px;
+        position: relative;
+    }
+    section h3::before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 120px;
+        height: 1px;
+        background-color: #ddd;
+        left: calc(50% - 60px);
+    }
+    .des-about{
+        color: black;
+    }
+    
+    span{
+        color: white;
+    }
+    
+    #about p{
+        text-align: justify;
+        text-indent: 30px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    
+    #skills,
+    #contact{
+        background-color: #f9f9f9;
+    }
+    
+    #skills .bar{
+        height: 30px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        margin: 5px 0 25px 0;
+    }
+    
+    .bar .nilai{
+        width: 80%;
+        height: 30px;
+        background-color: rgb(26, 119, 196);
+        display: block;
+        text-align: center;
+    }
+    
+    .bar .css{
+        width: 70%;
+        height: 30px;
+        background-color: rgb(26, 119, 196);
+        display: block;
+        text-align: center;
+    }
+    
+    .bar .script{
+        width: 60%;
+        height: 30px;
+        background-color: rgb(26, 119, 196);
+        display: block;
+        text-align: center;
+    }
+    
+    .col-4{
+        width: 25%;
+        box-sizing: border-box;
+        padding: 5px;
+        float: left;
+        text-align: center;
+    }
+    
+    .col-4 a span{
+        color: black;
+    }
+    
+    .col-4 img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .col-4 a:hover img{
+       box-shadow: 0 10px 15px rgb(26, 119, 196, .5);
+       transform: scale(1.1);
+    }
+    
+    
+    .col-3{
+        width: 33.33%;
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    .col-3 p{
+        margin-top: 10px;
+    }
+    
+    .col-3 p a{
+        color: black;
+    }
+    
+    .col-3 p a i{
+        font-size: 1.75em;
+        padding: 10px;
+    }
+    p a i{
+        font-size: 1.75em;
+    }
+    .col-3 p  a i:hover{
+        color: #D89216;
+    }
+    
+    .col-3 p a:hover{
+        color: #D89216;
+    }
+    
+    .col-3 .des-about:hover{
+        color: #D89216;
+    }
+    
+    #foot{
+        background-color: #53addd;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+    }
+    
+    #foot small{
+        color: white;
+        
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+
+   
+    @media(max-width:768px){ 
+        .mobile-menu{ 
+            display:block;
+        }
+        header ul{ 
+            display:none;
+        }
+        .col-4{
+            width: 50%;
+        }
+    }
